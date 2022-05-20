@@ -6,13 +6,14 @@ let buildings = document.querySelectorAll('.building');
 let quote = document.querySelector('.quote');
 let select = document.getElementById('hours');
 let value = select.options[select.selectedIndex].value;
-
+let presenter = document.querySelector('.lol');
 
 select.addEventListener('change', function() {
     value = select.options[select.selectedIndex].value;
     console.log(value);
   });
 
+document.querySelector('.pressKey').addEventListener('click',()=>{dayChange();})
 
 document.addEventListener("keyup", function(event) {
     if (event.key === 'Enter') {
@@ -36,7 +37,7 @@ function animation(dayStatus) {
         sun.style.boxShadow = "0rem 0rem 1rem white";
         sun.style.top = "100%";
         quoteCreator();
-        delay(700).then(() => sun.style.top = "20%");
+        delay(700).then(() => sun.style.top = "10%");
     }
     else {
         body.style.backgroundColor = 'lightblue';
@@ -44,7 +45,7 @@ function animation(dayStatus) {
         sun.style.boxShadow = "0rem 0rem 1rem yellow";
         sun.style.top = "100%";
         quoteCreator();
-        delay(700).then(() => sun.style.top = "20%");
+        delay(700).then(() => sun.style.top = "10%");
     }
 
 }

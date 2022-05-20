@@ -1,6 +1,6 @@
 @media (min-width: 0px) {
     html {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
   
@@ -12,13 +12,13 @@
   
   @media (min-width: 600px) {
     html {
-      font-size: 19px;
+      font-size: 17px;
     }
   }
   
   @media (min-width: 1000px) {
     html {
-      font-size: 25px;
+      font-size: 17px;
     }
   }
   
